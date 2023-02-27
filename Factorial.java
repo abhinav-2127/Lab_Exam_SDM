@@ -23,7 +23,8 @@ public class Factorial
             i++;
         } 
 
-        System.out.println("\n Factorial of the number: " + fact);  
+        System.out.println("\n Factorial of the number: " + fact); 
+ 	System.out.println("Changes in this file are done"); 
      }   
 =======
 
