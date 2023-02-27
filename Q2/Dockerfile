@@ -1,5 +1,6 @@
-FROM openjdk:8-jdk-alpine
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN javac Factorial.java
-CMD ["java", "Factorial"]
+#base image
+FROM openjdk:8
+COPY . /src/java
+WORKDIR /src/java
+RUN ["javac","Factorial.java"]
+ENTRYPOINT ["java","Factorial"]
